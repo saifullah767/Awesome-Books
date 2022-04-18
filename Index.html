@@ -1,42 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Awesomer Books</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Awesome Books</h1>
 
-
-<section id="Add-Books" >
-    <form
-    onsubmit="event.preventDefault();onFormSubmit();">
-      <label for="author"> author </label>
-      <input type="text" placeholder="author" id="author" />
-      <label for="book"> book </label>
-      <input type="text" placeholder="book" id="book" />
-      <input type="submit" value="Submit">
-    </form>
+    <section id="Add-Books">
+      <form onsubmit="event.preventDefault();onFormSubmit();">
+        <label for="author"> author </label>
+        <input type="text" placeholder="author" id="author" />
+        <label for="book"> book </label>
+        <input type="text" placeholder="book" id="book" />
+        <input type="submit" value="Submit" />
+      </form>
     </section>
 
-    <section id="Book-List" >
-        <table class="list" id="List">
-            <thead>
-                <tr>
-                    <th> Author </th>
-                    <th>Books</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-
-            </tbody>
-        </table>
-
+    <section id="Book-List">
+      <table class="list" id="List">
+        <thead>
+          <tr>
+            <th>Author</th>
+            <th>Books</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
     </section>
-    
-    <script src="index.js" ></script>
-</body>
+
+    <script src="index.js"></script>
+  </body>
 </html>
