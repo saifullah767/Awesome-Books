@@ -4,34 +4,50 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Awesomer Books</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>Awesome Books</title>
   </head>
+
   <body>
-    <h1>Awesome Books</h1>
+    <div class="container">
+      <nav>
+        <p><a href="/">Awesome Books</a></p>
+        <ul>
+          <li class="list">List</li>
+          <li class="add-new">Add New</li>
+          <li class="contact">Contact</li>
+        </ul>
+      </nav>
 
-    <section id="Add-Books">
-      <form onsubmit="event.preventDefault();onFormSubmit();">
-        <label for="author"> author </label>
-        <input type="text" placeholder="author" id="author" />
-        <label for="book"> book </label>
-        <input type="text" placeholder="book" id="book" />
-        <input type="submit" value="Submit" />
+      <div class="date-time">
+        <span id="date-time"></span>
+      </div>
+
+      <div class="books-self">
+        <h1>All Awesome Books</h1>
+        <div class="books"></div>
+      </div>
+      <form class="add-book">
+        <h2>Add a new book</h2>
+        <input id="title" type="text" name="title" placeholder="Add Title" />
+        <input id="author" type="text" name="author" placeholder="Add Author" />
+        <button class="add-btn" id="add-btn" type="button">Add Book</button>
       </form>
-    </section>
-
-    <section id="Book-List">
-      <table class="list" id="List">
-        <thead>
-          <tr>
-            <th>Author</th>
-            <th>Books</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </section>
-
+      <div class="contact-info">
+        <h2>Contact information</h2>
+        <div>
+          <p>"Hello"? Reach out to us if you have any query or concern!</p>
+          <ul>
+            <li>Our e-mail is skj997788@gmail.com</li>
+            <li>Our phone number is +92 0900 7801</li>
+            <li>Our address is Karachi, Pakistan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>Copyright @Saifullah Jamali - 2022</p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>
