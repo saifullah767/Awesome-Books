@@ -18,5 +18,13 @@ function insertNewRecord(data) {
   cell2 = newRow.insertCell(1);
   cell2.innerHTML = data.book;
   cell3 = newRow.insertCell(2);
-  cell3.innerHTML = `<button>Delete</button>`;
+  cell3.innerHTML = `<button  onClick="onDelete(this)">Delete</button>`;
+}
+
+function onDelete(td) {
+  if (confirm("Are you sure to delete this record?")) {
+    row = td.parentElement.parentElement;
+    document.getElementById("List").deleteRow(row.rowIndex);
+    resetForm();
+  }
 }
