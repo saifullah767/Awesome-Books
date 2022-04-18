@@ -2,24 +2,26 @@
 
 # Project Name
 
-> Description the project.
+> Awesome Books is a simple project Adding and delete data with javascript
 
 
 ## Built With
 
 - HTML
 - CSS
-- JavaScript
+- JavaScripts
+- GitFlow
+- Linters
 
-## Live Demo (if available)
+## Live Preview
 
-[Live Demo Link](https://livedemo.com)
+[Live Preview](https://saifullah767.github.io/Awesome-Books/)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+Clone the repository by using:
+'  '
 
 
 To get a local copy up and running follow these simple example steps.

@@ -24,11 +24,11 @@ const library = new Library();
 library.awesomeBooks = [];
 
 const saveBooks = () => {
-  localStorage.setItem("myAwesomeBooks", JSON.stringify(library.awesomeBooks));
+  localStorage.setItem('myAwesomeBooks', JSON.stringify(library.awesomeBooks));
 };
 
 const getStorageData = () => {
-  const localFormData = JSON.parse(localStorage.getItem("myAwesomeBooks"));
+  const localFormData = JSON.parse(localStorage.getItem('myAwesomeBooks'));
   if (localFormData == null) {
     library.awesomeBooks = [];
   } else {
@@ -38,27 +38,27 @@ const getStorageData = () => {
 
 window.onload = getStorageData();
 const dt = new Date();
-document.getElementById("date-time").innerHTML = dt;
+document.getElementById('date-time').innerHTML = dt;
 // Display Books Data
 
 const displayBooks = () => {
-  const booksList = document.querySelector(".books");
-  booksList.innerHTML = "";
+  const booksList = document.querySelector('.books');
+  booksList.innerHTML = '';
   let i = 0;
   library.awesomeBooks.forEach((book) => {
     i++;
-    const bookElement = document.createElement("div");
-    bookElement.classList.add("book");
+    const bookElement = document.createElement('div');
+    bookElement.classList.add('book');
     if (i % 2 !== 0) {
-      bookElement.classList.add("odd-color");
+      bookElement.classList.add('odd-color');
     }
-    const headTitle = document.createElement("h2");
-    headTitle.textContent = `"${book.title}" by ${book.author}`;
+    const headTitle = document.createElement('h2');
+    headTitle.textContent = `'${book.title}' by ${book.author}`;
 
-    const removeBtn = document.createElement("button");
-    removeBtn.textContent = "Remove";
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'Remove';
 
-    removeBtn.addEventListener("click", () => {
+    removeBtn.addEventListener('click', () => {
       library.removeBook(book.id);
       displayBooks();
     });
@@ -76,12 +76,12 @@ const generateBookID = () => {
 
 // Get Form Data from Local Storage
 
-const form = document.querySelector("form");
-const title = form.querySelector("#title");
-const author = form.querySelector("#author");
+const form = document.querySelector('form');
+const title = form.querySelector('#title');
+const author = form.querySelector('#author');
 
-const addBtn = document.querySelector("#add-btn");
-addBtn.addEventListener("click", (event) => {
+const addBtn = document.querySelector('#add-btn');
+addBtn.addEventListener('click', (event) => {
   if (author.value && title.value) {
     event.preventDefault();
     const bookTitle = title.value;
@@ -107,42 +107,42 @@ window.onbeforeunload = () => {
 
 // Website Navigation
 
-const list = document.querySelector(".list");
-const addNew = document.querySelector(".add-new");
-const contact = document.querySelector(".contact");
-const booksSelf = document.querySelector(".books-self");
-const formAddBook = document.querySelector(".add-book");
-const contactInfo = document.querySelector(".contact-info");
+const list = document.querySelector('.list');
+const addNew = document.querySelector('.add-new');
+const contact = document.querySelector('.contact');
+const booksSelf = document.querySelector('.books-self');
+const formAddBook = document.querySelector('.add-book');
+const contactInfo = document.querySelector('.contact-info');
 
 const listActive = () => {
-  list.classList.add("active-link");
-  addNew.classList.remove("active-link");
-  contact.classList.remove("active-link");
-  booksSelf.classList.remove("hide");
-  formAddBook.classList.add("hide");
-  contactInfo.classList.add("hide");
+  list.classList.add('active-link');
+  addNew.classList.remove('active-link');
+  contact.classList.remove('active-link');
+  booksSelf.classList.remove('hide');
+  formAddBook.classList.add('hide');
+  contactInfo.classList.add('hide');
 };
 
 const addNewActive = () => {
-  addNew.classList.add("active-link");
-  list.classList.remove("active-link");
-  contact.classList.remove("active-link");
-  formAddBook.classList.remove("hide");
-  contactInfo.classList.add("hide");
-  booksSelf.classList.add("hide");
+  addNew.classList.add('active-link');
+  list.classList.remove('active-link');
+  contact.classList.remove('active-link');
+  formAddBook.classList.remove('hide');
+  contactInfo.classList.add('hide');
+  booksSelf.classList.add('hide');
 };
 
 const contactActive = () => {
-  contact.classList.add("active-link");
-  list.classList.remove("active-link");
-  addNew.classList.remove("active-link");
-  booksSelf.classList.add("hide");
-  formAddBook.classList.add("hide");
-  contactInfo.classList.remove("hide");
+  contact.classList.add('active-link');
+  list.classList.remove('active-link');
+  addNew.classList.remove('active-link');
+  booksSelf.classList.add('hide');
+  formAddBook.classList.add('hide');
+  contactInfo.classList.remove('hide');
 };
 
-list.addEventListener("click", listActive);
-addNew.addEventListener("click", addNewActive);
-contact.addEventListener("click", contactActive);
+list.addEventListener('click', listActive);
+addNew.addEventListener('click', addNewActive);
+contact.addEventListener('click', contactActive);
 
 window.onload = listActive();
