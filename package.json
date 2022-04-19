@@ -1,23 +1,22 @@
 {
-  "name": "conferencepage_capstoneproject",
+  "name": "awesomebooks",
   "version": "1.0.0",
   "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
-  "main": "script.js",
-  "type": "module",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amrendrakind/conferencePage_capstoneProject.git"
+    "url": "git+https://github.com/amrendrakind/AwesomeBooks.git"
   },
   "keywords": [],
-  "author": "Amrendra K",
+  "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amrendrakind/conferencePage_capstoneProject/issues"
+    "url": "https://github.com/amrendrakind/AwesomeBooks/issues"
   },
-  "homepage": "https://github.com/amrendrakind/conferencePage_capstoneProject#readme",
+  "homepage": "https://github.com/amrendrakind/AwesomeBooks#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
