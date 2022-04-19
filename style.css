@@ -1,96 +1,91 @@
-
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
-ul{
-    list-style: none;
-    padding-left: 0;
-}
-
-.container{
-    margin-bottom: 10rem;
+ul {
+  list-style: none;
+  padding-left: 0;
 }
 
-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    border: 3px solid black;
+.container {
+  margin-bottom: 10rem;
 }
-.logo-a{
-    font-size: 30px;
-    padding: 10px ;
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border: 3px solid black;
 }
-.nav-list ul li a{
-    padding-right: 10px;
-    font-size: 20px;
-    margin-right: 15px;
- 
+.logo-a {
+  font-size: 30px;
+  padding: 10px;
 }
-.nav-list ul{
-    display: flex;
-    flex-direction: row;
+.nav-list ul li a {
+  padding-right: 10px;
+  font-size: 20px;
+  margin-right: 15px;
 }
-.border-right{
-    border-right: 2px solid black;
+.nav-list ul {
+  display: flex;
+  flex-direction: row;
+}
+.border-right {
+  border-right: 2px solid black;
 }
 .date-time {
-    font-size: 15px;
-    text-align: end;
-    padding-right: 5px;
-    margin-bottom: 20px;
-  }
-
-#Add-Books{
-    display: none;
-    flex-direction: column;
+  font-size: 15px;
+  text-align: end;
+  padding-right: 5px;
+  margin-bottom: 20px;
 }
 
-#Add-Books h2{
-    display: flex;
-    align-self: center;
+#Add-Books {
+  display: none;
+  flex-direction: column;
 }
 
-#Add-Books form{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+#Add-Books h2 {
+  display: flex;
+  align-self: center;
 }
 
-#Add-Books input{
-    padding: 5px;
-    margin: 10px;
-    width: 50%;
-    border: 1px solid black;
-    font-size: 15px;
+#Add-Books form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
-#Add-Books button{
-    margin-left: auto;
-    margin-right: 24.5%;
-    padding: 3px 20px 3px 20px
-    
+#Add-Books input {
+  padding: 5px;
+  margin: 10px;
+  width: 50%;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+#Add-Books button {
+  margin-left: auto;
+  margin-right: 24.5%;
+  padding: 3px 20px 3px 20px;
 }
 
 .contact {
-    margin-top: 20vh;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-  }
-
-.footer{
-    width: 100%;
-    display: flex;
-    border: 3px solid black;
-    position: fixed;
-    bottom: 0;
-    padding: 15px;
-    margin-bottom: 10px;
+  margin-top: 20vh;
+  display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
-
+.footer {
+  width: 100%;
+  display: flex;
+  border: 3px solid black;
+  position: fixed;
+  bottom: 0;
+  padding: 15px;
+  margin-bottom: 10px;
+}
