@@ -1,42 +1,4 @@
 /* global row, cell13*/
-var Addbook = document.getElementById('Add-Books');
-var displalist = document.getElementById('Book-List');
-var displacontact = document.getElementById('contact');
-function displayAdd() {
-  if (Addbook.style.display === 'none') {
-    Addbook.style.display = 'flex';
-    displalist.style.display = 'none';
-    displacontact.style.display = 'none';
-  } else {
-    Addbook.style.display = 'flex';
-    displalist.style.display = 'none';
-    displacontact.style.display = 'none';
-  }
-}
-function displayList() {
-    if (displalist.style.display === 'none') {
-        Addbook.style.display = 'none';
-        displalist.style.display = 'flex';
-        displacontact.style.display = 'none';
-      } else {
-        Addbook.style.display = 'none';
-        displalist.style.display = 'flex';
-        displacontact.style.display = 'none';
-      }
-}
-
-function displayContact() {
-    if ( displacontact.style.display === 'none') {
-        Addbook.style.display = 'none';
-        displalist.style.display = 'none';
-        displacontact.style.display = 'flex';
-      } else {
-        Addbook.style.display = 'none';
-        displalist.style.display = 'none';
-        displacontact.style.display = 'flex';
-      }
-}
-
 function onFormSubmit() {
   var formData = readFormData();
   insertNewRecord(formData);
