@@ -45,7 +45,7 @@ nav{
   }
 
 #Add-Books{
-    display: flex;
+    display: none;
     flex-direction: column;
 }
 
@@ -75,6 +75,13 @@ nav{
     padding: 3px 20px 3px 20px
     
 }
+
+.contact {
+    margin-top: 20vh;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+  }
 
 .footer{
     width: 100%;
