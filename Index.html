@@ -1,78 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Awesomer Books</title>
-  </head>
-  <body>
+    <title>Awesome Books</title>
+</head>
 
-    <div class="container">
-
-    <nav> 
-        <div class="brand" >
-           <h1> <a href="" class="logo-a" > Awesome Books </a> </h1>
-        </div>
-
-        <div class="nav-list">
-            <ul>
-                <li> <a href="javascript:void(0);" class="border-right" onclick="displayList()" > List </a> </li>
-                <li> <a href="javascript:void(0);" class="border-right" onclick="displayAdd()"> Add new </a> </li>
-                <li> <a href="javascript:void(0);" onclick="displayContact()" > Contact </a> </li>
-            </ul>
-
-        </div>
-        
+<body>
+    <nav>
+        <p><a href="/">Awesome Books</a></p>
+        <ul>
+            <li class="list-books">List Books</li>
+            <li class="add-books">Add Books</li>
+            <li class="contact">Contact</li>
+        </ul>
     </nav>
-    <div class="date-time">
-        <span id='date-time'></span>
-    </div>
-
-    <section id="Add-Books">
-        <h2> Add a new book </h2>
-      <form onsubmit="event.preventDefault();onFormSubmit();">
-
-        <input type="text" placeholder="Title"  id="book"  />
-
-        <input type="text" placeholder="Author" id="author" />
-
-        <button type="submit" > Add </button>
-
-      </form>
-    </section>
-
-    <section id="Book-List">
-      <table class="list" id="List">
-        <thead>
-          <tr>
-            <th>Author</th>
-            <th>Books</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </section>  
-    
-    <section class="contact" id="contact"> 
-        <h2>Contact information</h2>
-        <div>
-          <p>"Hello"? Reach out to us if you have any query or concern!</p>
-          <ul>
-            <li>Our e-mail is abc.pak@gmail.com</li>
-            <li>Our phone number is +92 0900 78 01</li>
-            <li>Our address is adc country, pakistan</li>
-          </ul>
-        </div>
-    </section>
-</div>
-<section class="footer"> 
-<div> Copyright @Saifullah </div>
-
-</section>
-
+    <div class="books"></div>
+    <form class="add-books">
+        <input id="title" type="text" name="title" placeholder="Add Title" />
+        <input id="author" type="text" name="author" placeholder="Add Author"/>
+        <button id="add-btn" type="button">Add Book</button>
+    </form>
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>

@@ -68,3 +68,22 @@ function onDelete(td) {
     resetForm();
   }
 }
+
+const library = new Library();
+library.awesomeBooks = [];
+
+const saveBooks = () => {
+  localStorage.setItem('myAwesomeBooks', JSON.stringify(library.awesomeBooks));
+};
+
+const getStorageData = () => {
+  const localFormData = JSON.parse(localStorage.getItem('myAwesomeBooks'));
+  if (localFormData == null) {
+    library.awesomeBooks = [];
+  } else {
+    library.awesomeBooks = localFormData;
+  }
+};
+window.onload = getStorageData();
+const dt = new Date();
+document.getElementById('date-time').innerHTML = dt;
