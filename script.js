@@ -24,11 +24,11 @@ const library = new Library();
 library.awesomeBooks = [];
 
 const saveBooks = () => {
-  localStorage.setItem("myAwesomeBooks", JSON.stringify(library.awesomeBooks));
+  localStorage.setItem('myAwesomeBooks', JSON.stringify(library.awesomeBooks));
 };
 
 const getStorageData = () => {
-  const localFormData = JSON.parse(localStorage.getItem("myAwesomeBooks"));
+  const localFormData = JSON.parse(localStorage.getItem('myAwesomeBooks'));
   if (localFormData == null) {
     library.awesomeBooks = [];
   } else {
@@ -41,23 +41,23 @@ window.onload = getStorageData();
 // Display Books Data
 
 const displayBooks = () => {
-  const booksList = document.querySelector(".books");
-  booksList.innerHTML = "";
+  const booksList = document.querySelector('.books');
+  booksList.innerHTML = '';
   let i = 0;
   library.awesomeBooks.forEach((book) => {
     i++;
-    const bookElement = document.createElement("div");
-    bookElement.classList.add("book");
+    const bookElement = document.createElement('div');
+    bookElement.classList.add('book');
     if (i % 2 !== 0) {
-      bookElement.classList.add("odd-color");
+      bookElement.classList.add('odd-color');
     }
-    const headTitle = document.createElement("h2");
-    headTitle.textContent = `"${book.title}" by ${book.author}`;
+    const headTitle = document.createElement('h2');
+    headTitle.textContent = `'${book.title}' by ${book.author}`;
 
-    const removeBtn = document.createElement("button");
-    removeBtn.textContent = "Remove";
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'Remove';
 
-    removeBtn.addEventListener("click", () => {
+    removeBtn.addEventListener('click', () => {
       library.removeBook(book.id);
       displayBooks();
     });
@@ -75,12 +75,12 @@ const generateBookID = () => {
 
 // Get Form Data from Local Storage
 
-const form = document.querySelector("form");
-const title = form.querySelector("#title");
-const author = form.querySelector("#author");
+const form = document.querySelector('form');
+const title = form.querySelector('#title');
+const author = form.querySelector('#author');
 
-const addBtn = document.querySelector("#add-btn");
-addBtn.addEventListener("click", (event) => {
+const addBtn = document.querySelector('#add-btn');
+addBtn.addEventListener('click', (event) => {
   if (author.value && title.value) {
     event.preventDefault();
     const bookTitle = title.value;
