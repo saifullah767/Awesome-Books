@@ -4,50 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Awesome Books</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Awesomer Books</title>
   </head>
-
   <body>
+
     <div class="container">
-      <nav>
-        <p><a href="/">Awesome Books</a></p>
-        <ul>
-          <li class="list">List</li>
-          <li class="add-new">Add New</li>
-          <li class="contact">Contact</li>
-        </ul>
-      </nav>
 
-      <div class="date-time">
-        <span id="date-time"></span>
-      </div>
-
-      <div class="books-self">
-        <h1>All Awesome Books</h1>
-        <div class="books"></div>
-      </div>
-      <form class="add-book">
-        <h2>Add a new book</h2>
-        <input id="title" type="text" name="title" placeholder="Add Title" />
-        <input id="author" type="text" name="author" placeholder="Add Author" />
-        <button class="add-btn" id="add-btn" type="button">Add Book</button>
-      </form>
-      <div class="contact-info">
-        <h2>Contact information</h2>
-        <div>
-          <p>"Hello"? Reach out to us if you have any query or concern!</p>
-          <ul>
-            <li>Our e-mail is skj997788@gmail.com</li>
-            <li>Our phone number is +92 0900 7801</li>
-            <li>Our address is Karachi, Pakistan</li>
-          </ul>
+    <nav> 
+        <div class="brand" >
+           <h1> <a href="" class="logo-a" > Awesome Books </a> </h1>
         </div>
-      </div>
+
+        <div class="nav-list">
+            <ul>
+                <li> <a href="javascript:void(0);" class="border-right" onclick="displayList()"> List </a> </li>
+                <li> <a href="javascript:void(0);" class="border-right" > Add new </a> </li>
+                <li> <a href="javascript:void(0);" > Contact </a> </li>
+            </ul>
+
+        </div>
+        
+    </nav>
+    <div class="date-time">
+        <span id='date-time'></span>
     </div>
-    <footer>
-      <p>Copyright @Saifullah Jamali - 2022</p>
-    </footer>
+
+    <section id="Add-Books">
+        <h2> Add a new book </h2>
+      <form onsubmit="event.preventDefault();onFormSubmit();">
+
+        <input type="text" placeholder="Title"  id="book"  />
+
+        <input type="text" placeholder="Author" id="author" />
+
+        <button type="submit" > Add </button>
+
+      </form>
+    </section>
+
+    <section id="Book-List">
+      <table class="list" id="List">
+        <thead>
+          <tr>
+            <th>Author</th>
+            <th>Books</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>    
+</div>
+<section class="footer"> 
+<div> Copyright @Saifullah </div>
+
+</section>
+
     <script src="index.js"></script>
   </body>
 </html>
