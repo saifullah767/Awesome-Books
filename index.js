@@ -66,3 +66,27 @@ const displayBooks = () => {
   });
   saveBooks();
 };
+
+// Get Form Data from Local Storage
+
+const form = document.querySelector('form');
+const title = form.querySelector('#title');
+const author = form.querySelector('#author');
+
+const addBtn = document.querySelector('#add-btn');
+addBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  const bookTitle = title.value;
+  const bookAuthor = author.value;
+  addBooks(bookTitle, bookAuthor);
+  displayBooks();
+  saveBooks();
+});
+
+getStorageData();
+displayBooks();
+
+window.onbeforeunload = () => {
+  getStorageData();
+  displayBooks();
+};
