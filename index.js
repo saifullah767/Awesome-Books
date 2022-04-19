@@ -1,3 +1,4 @@
+/* global row, cell13*/
 var Addbook = document.getElementById('Add-Books');
 var displalist = document.getElementById('Book-List');
 var displacontact = document.getElementById('contact');
