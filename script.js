@@ -1,7 +1,7 @@
 /* eslint-disable no-plusplus */
-let displaList = document.getElementById('Book-List');
-let displaBooks = document.getElementById('Add-Books');
-let displaContact = document.getElementById('contact');
+const displaList = document.getElementById('Book-List');
+const displaBooks = document.getElementById('Add-Books');
+const displaContact = document.getElementById('contact');
 class Library {
   constructor(Title, Author, ID) {
     this.title = Title;
