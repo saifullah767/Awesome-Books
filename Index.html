@@ -13,22 +13,40 @@
   <nav>
     <p><a href="/">Awesome Books</a></p>
     <ul>
-      <li class="list" id="Book-List" onclick="displayList()">List</li>
-      <li class="add" id="Add-Books" onclick="displayAdd()">Add New</li>
-      <li class="contact" id="contact" onclick="displayContact()">Contact</li>
+      <li class="list" onclick="displayList()">List</li>
+      <li class="add" onclick="displayAdd()">Add New</li>
+      <li class="contact" onclick="displayContact()">Contact</li>
     </ul>
   </nav>
-  <div class="books-self">
+  <div class="date">
+    <p id="date">
+
+    </p>
+  </div>
+  <div class="books-self" id="Book-List">
     <h1>All Awesome Books</h1>
     <div class="books"></div>
   </div>
-  <div class="bar"></div>
-  <form class="add-book">
+  <form class="add-book" id="Add-Books">
     <h2>Add a new book</h2>
     <input id="title" type="text" name="title" placeholder="Add Title" />
     <input id="author" type="text" name="author" placeholder="Add Author" />
     <button class="add-btn" id="add-btn" type="button">Add Book</button>
   </form>
+
+  <section class="contact" id="contact">
+    <h2>Contact information</h2>
+    <div>
+      <p>"Hello"? Reach out to us if you have any query or concern!</p>
+      <ul>
+        <li>Our e-mail is abc.pak@gmail.com</li>
+        <li>Our phone number is +92 0900 78 01</li>
+        <li>Our address is adc country, pakistan</li>
+      </ul>
+    </div>
+  </section>
+  </div>
+
   <section class="footer">
     <div> Copyright @Saifullah </div>
   </section>
