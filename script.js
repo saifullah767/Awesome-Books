@@ -1,3 +1,6 @@
+var displaList = document.getElementById('Book-List');
+var displaBooks = document.getElementById('Add-Books');
+var displaContact = document.getElementById('contact');
 class Library {
   constructor(Title, Author, ID) {
     this.title = Title;
@@ -23,11 +26,11 @@ const library = new Library();
 library.awesomeBooks = [];
 
 const saveBooks = () => {
-  localStorage.setItem("myAwesomeBooks", JSON.stringify(library.awesomeBooks));
+  localStorage.setItem('myAwesomeBooks', JSON.stringify(library.awesomeBooks));
 };
 
 const getStorageData = () => {
-  const localFormData = JSON.parse(localStorage.getItem("myAwesomeBooks"));
+  const localFormData = JSON.parse(localStorage.getItem('myAwesomeBooks'));
   if (localFormData == null) {
     library.awesomeBooks = [];
   } else {
@@ -40,23 +43,23 @@ window.onload = getStorageData();
 // Display Books Data
 
 const displayBooks = () => {
-  const booksList = document.querySelector(".books");
-  booksList.innerHTML = "";
+  const booksList = document.querySelector('.books');
+  booksList.innerHTML = '';
   let i = 0;
   library.awesomeBooks.forEach((book) => {
     i++;
-    const bookElement = document.createElement("div");
-    bookElement.classList.add("book");
+    const bookElement = document.createElement('div');
+    bookElement.classList.add('book');
     if (i % 2 !== 0) {
-      bookElement.classList.add("odd-color");
+      bookElement.classList.add('odd-color');
     }
-    const headTitle = document.createElement("h2");
+    const headTitle = document.createElement('h2');
     headTitle.textContent = `'${book.title}' by ${book.author}`;
 
-    const removeBtn = document.createElement("button");
-    removeBtn.textContent = "Remove";
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'Remove';
 
-    removeBtn.addEventListener("click", () => {
+    removeBtn.addEventListener('click', () => {
       library.removeBook(book.id);
       displayBooks();
     });
@@ -74,12 +77,12 @@ const generateBookID = () => {
 
 // Get Form Data from Local Storage
 
-const form = document.querySelector("form");
-const title = form.querySelector("#title");
-const author = form.querySelector("#author");
+const form = document.querySelector('form');
+const title = form.querySelector('#title');
+const author = form.querySelector('#author');
 
-const addBtn = document.querySelector("#add-btn");
-addBtn.addEventListener("click", (event) => {
+const addBtn = document.querySelector('#add-btn');
+addBtn.addEventListener('click', (event) => {
   if (author.value && title.value) {
     event.preventDefault();
     const bookTitle = title.value;
@@ -105,43 +108,40 @@ window.onbeforeunload = () => {
 
 // Navigation
 
-var displaList = document.getElementById("Book-List");
-var displaBooks = document.getElementById("Add-Books");
-var displaContact = document.getElementById("contact");
 
 function displayList() {
-  if (displaList.style.display === "none") {
-    displaList.style.display = "flex";
-    displaBooks.style.display = "none";
-    displaContact.style.display = "none";
+  if (displaList.style.display === 'none') {
+    displaList.style.display = 'flex';
+    displaBooks.style.display = 'none';
+    displaContact.style.display = 'none';
   } else {
-    displaList.style.display = "flex";
-    displaBooks.style.display = "none";
-    displaContact.style.display = "none";
+    displaList.style.display = 'flex';
+    displaBooks.style.display = 'none';
+    displaContact.style.display = 'none';
   }
 }
 
 function displayAdd() {
-  if (displaBooks.style.display === "none") {
-    displaList.style.display = "none";
-    displaBooks.style.display = "flex";
-    displaContact.style.display = "none";
+  if (displaBooks.style.display === 'none') {
+    displaList.style.display = 'none';
+    displaBooks.style.display = 'flex';
+    displaContact.style.display = 'none';
   } else {
-    displaList.style.display = "none";
-    displaBooks.style.display = "flex";
-    displaContact.style.display = "none";
+    displaList.style.display = 'none';
+    displaBooks.style.display = 'flex';
+    displaContact.style.display = 'none';
   }
 }
 
 function displayContact() {
-  if (displaContact.style.display === "none") {
-    displaList.style.display = "none";
-    displaBooks.style.display = "none";
-    displaContact.style.display = "flex";
+  if (displaContact.style.display === 'none') {
+    displaList.style.display = 'none';
+    displaBooks.style.display = 'none';
+    displaContact.style.display = 'flex';
   } else {
-    displaList.style.display = "none";
-    displaBooks.style.display = "none";
-    displaContact.style.display = "flex";
+    displaList.style.display = 'none';
+    displaBooks.style.display = 'none';
+    displaContact.style.display = 'flex';
   }
 }
 
@@ -149,12 +149,12 @@ function displayContact() {
 function addZero(num) {
   return num < 10 ? `0${num}` : num;
 }
-let today = new Date();
-let month = today.getMonth() + 1;
-let year = today.getFullYear();
-let date = today.getDate();
-let hours = addZero(today.getHours());
-let minutes = addZero(today.getMinutes());
-let seconds = addZero(today.getSeconds());
-let current_date = `${month}/${date}/${year} -- ${hours}:${minutes}:${seconds} `;
-document.getElementById("date").innerText = current_date;
+const today = new Date();
+const month = today.getMonth() + 1;
+const year = today.getFullYear();
+const date = today.getDate();
+const hours = addZero(today.getHours());
+const minutes = addZero(today.getMinutes());
+const seconds = addZero(today.getSeconds());
+const currentDate = `${month}/${date}/${year} -- ${hours}:${minutes}:${seconds} `;
+document.getElementById('date').innerText = currentDate;
