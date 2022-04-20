@@ -1,6 +1,7 @@
-var displaList = document.getElementById('Book-List');
-var displaBooks = document.getElementById('Add-Books');
-var displaContact = document.getElementById('contact');
+/* eslint-disable no-plusplus */
+let displaList = document.getElementById('Book-List');
+let displaBooks = document.getElementById('Add-Books');
+let displaContact = document.getElementById('contact');
 class Library {
   constructor(Title, Author, ID) {
     this.title = Title;
@@ -107,7 +108,6 @@ window.onbeforeunload = () => {
 };
 
 // Navigation
-
 
 function displayList() {
   if (displaList.style.display === 'none') {
