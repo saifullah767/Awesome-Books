@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amrendrakind/AwesomeBooks.git"
+    "url": "git+https://github.com/saifullah767/Awesome-Books.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amrendrakind/AwesomeBooks/issues"
+    "url": "https://https://github.com/saifullah767/Awesome-Books/issues"
   },
-  "homepage": "https://github.com/amrendrakind/AwesomeBooks#readme",
+  "homepage": "https://https://github.com/saifullah767/Awesome-Books#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",

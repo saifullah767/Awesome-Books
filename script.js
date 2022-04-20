@@ -1,3 +1,4 @@
+/* eslint-disable no-plusplus */
 const displaList = document.getElementById('Book-List');
 const displaBooks = document.getElementById('Add-Books');
 const displaContact = document.getElementById('contact');
