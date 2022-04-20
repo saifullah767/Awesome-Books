@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Awesome Books
 
 > Awesome Books is a simple project Adding and delete data with javascript
 
@@ -30,6 +30,12 @@ Clone the repository by using:
 
 - GitHub: [@githubhandle](https://github.com/saifullah767)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/saifullah-khan-b0637b169)
+
+👤 **Joseph Ogbole**
+
+- GitHub: [@ONJoseph](https://github.com/ONJoseph)
+- Twitter: [@ONJCodes](https://twitter.com/ONJCodes)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/o-n-joseph-ba8425147/)
 
 ## 🤝 Contributing
 
